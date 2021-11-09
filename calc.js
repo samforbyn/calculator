@@ -20,13 +20,17 @@ reader.question("What would you like to calculate?", function(input){
 
 	if (mathSymbol == "-") {
 		let answer = num1 - num2
-		console.log(answer)
+		console.log(`The answer is ${answer}`)
 	} else if (mathSymbol == "+"){
 		let answer = num1 + num2
-		console.log(answer)
-	} else if (mathSymbol == "")
-	
-
+		console.log(`The answer is ${answer}`)
+	} else if (mathSymbol == "/"){
+		let answer = num1 / num2
+		console.log(`The answer is ${answer}`)
+	} else if (mathSymbol == "*"){
+		let answer = num1 * num2
+		console.log(`The answer is ${answer}`)
+	}
 
 	// This line closes the connection to the command line interface.
 	reader.close()
