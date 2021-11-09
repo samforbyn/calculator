@@ -30,11 +30,18 @@ reader.question("What would you like to calculate?", function(input){
 	} else if (mathSymbol == "*"){
 		let answer = num1 * num2
 		console.log(`The answer is ${answer}`)
-	} else if (mathSymbol == "Sqrt"){
+	} else if (mathSymbol == "sqrt"){
 		let answer = Math.sqrt(num1)
-		console.log(`The answer is ${answer}`)
+		console.log(`The square root of ${num1} is ${answer}`)
+	} else if (mathSymbol == "sq"){
+		let answer = num1 * num1
+		console.log(`${num1} squared is ${answer}`)
+	}else if (mathSymbol == "%"){
+		let answer = num1 % num2
+		console.log(`${num1} divided by ${num2} will have a remainder of ${answer}`)
 	}
-
+		
+		
 	// This line closes the connection to the command line interface.
 	reader.close()
 
